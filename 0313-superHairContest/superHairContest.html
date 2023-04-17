@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>3/13</title>
+		<script src="superHairContest.js"></script>
+		<link rel="stylesheet" href="superHairContest.css" type="text/css" />
+		<style>
+			/*body {
+        background-image: url("https://drive.google.com/file/d/1AlgxCXXZGNg-Ypp-xrXN3Cnb_MLdiNMG/view");
+      }*/
+		</style>
+	</head>
+
+	<body>
+		<h1>3/13 禿點手到擒來小作業-超級落髮競賽</h1>
+
+		<hr />
+
+		<h2>【玩法說明】</h2>
+		<ol>
+			<li>點擊 "落髮" 按鈕隨機生成4個數字 [▢₁, ▢₂, ▢₃, ▢₄]</li>
+			<li>每一個 "▢" 為數字0~9其中一數</li>
+			<li>
+				▢₁, ▢₂, ▢₃, ▢₄ 分別代表早上、中午、下午、晚上的落髮數量
+				<br />
+				例如：[0, 1, 2,
+				8]代表早上掉了0根頭髮、中午掉了1根頭髮、下午掉了2根頭髮、晚上掉了8根頭髮。
+			</li>
+			<li>▢₁ ~ ▢₄合計後，一日總和掉髮數若≥10者勝利，並可獲得限量精美獎品。</li>
+		</ol>
+
+		<hr />
+
+		<h2>【遊戲開始】</h2>
+		<p id="hdD">連續落髮天數： <span id="hairdropDaysNum">0</span> 天</p>
+
+		<div>
+			<button
+				id="hairdrop"
+				onClick="hairdropDays();hairdropResult();hairdroHistory()">
+				落髮
+			</button>
+			<button id="hairwater" onClick="rehairdrop()">塗生髮水</button>
+		</div>
+
+		<p>落髮情報： <span id="hairdropResultNum"></span></p>
+	</body>
+</html>
